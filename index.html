@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruhestörer — Lärm dokumentieren. Recht bekommen.</title>
+  <meta name="description" content="iOS-App zur rechtssicheren Dokumentation von Lärmbelästigungen. Mit Dezibelmessung, Ruhezeiterkennung und PDF-Export für Ordnungsamt, Hausverwaltung und Gericht." />
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Ruhestörer — Lärm dokumentieren. Recht bekommen." />
+  <meta property="og:description" content="Rechtssichere Lärmdokumentation für Deutschland. Dezibelmesser, Ruhezeitverstöße, Behördenbriefe." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ruhestörer" />
+  <meta name="twitter:description" content="Lärm dokumentieren. Recht bekommen." />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Ruhestörer Home">
+      <span class="nav-logo-dot" aria-hidden="true"></span>
+      Ruhestörer
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#features" data-i18n="nav.features">Funktionen</a></li>
+      <li><a href="#how-it-works" data-i18n="nav.pricing">Preise</a></li>
+      <li><a href="pricing.html" data-i18n="nav.pricing">Preise</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="de" aria-label="Deutsch">DE</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <a href="#" class="btn btn-primary" style="font-size:0.8125rem;padding:8px 16px;" aria-label="App Store">
+        <!-- TODO: Replace # with real App Store URL before launch -->
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+        App Store
+      </a>
+      <button class="nav-hamburger" aria-label="Menu öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Mobile menu ─────────────────────────────────────────── -->
+<div class="mobile-menu" role="dialog" aria-label="Navigation">
+  <a href="#features" data-i18n="nav.features">Funktionen</a>
+  <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
+  <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════════════ -->
+<section aria-label="Hero" style="padding-top: calc(var(--nav-h) + var(--space-16)); padding-bottom: var(--space-32); position:relative; overflow:hidden;">
+
+  <!-- Background glow -->
+  <div class="glow-red" style="top:-100px; left:50%; transform:translateX(-50%); width:600px; height:600px;" aria-hidden="true"></div>
+
+  <!-- Subtle grid texture -->
+  <div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;mask-image:radial-gradient(ellipse 80% 50% at 50% 0%,black 0%,transparent 100%);"></div>
+
+  <div class="container" style="position:relative;z-index:1;">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-12);">
+
+      <!-- Left copy -->
+      <div style="max-width:580px;">
+        <div class="noise-badge reveal" data-delay="0">
+          <svg width="8" height="8" viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+          <span data-i18n="hero.badge">Für deutsches Recht</span>
+        </div>
+
+        <h1 class="display reveal" data-delay="80" style="font-size:clamp(2.5rem,5.5vw,4.5rem);line-height:1.05;letter-spacing:-0.03em;margin-top:var(--space-5);margin-bottom:var(--space-6);">
+          <span data-i18n="hero.headline">Lärm dokumentieren.<br>Recht bekommen.</span>
+        </h1>
+
+        <p class="reveal" data-delay="160" style="font-size:var(--text-lg);color:var(--text-secondary);line-height:1.7;margin-bottom:var(--space-8);max-width:480px;" data-i18n="hero.subhead">
+          Ruhestörer protokolliert Lärmbelästigungen rechtssicher — mit Dezibelmessung, automatischer Ruhezeiterkennung und gerichtsfesten PDF-Exporten für Ordnungsamt, Hausverwaltung und Anwalt.
+        </p>
+
+        <div class="reveal" data-delay="240" style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap;">
+          <!-- TODO: Replace href="#" with real App Store URL before publishing -->
+          <a href="#" class="appstore-badge" aria-label="Im App Store laden">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+            <span data-i18n="hero.cta_primary">Im App Store laden</span>
+          </a>
+          <a href="#features" class="btn btn-ghost" data-i18n="hero.cta_secondary">Mehr erfahren</a>
+        </div>
+
+        <!-- Social proof micro-line -->
+        <p class="reveal" data-delay="320" style="margin-top:var(--space-6);font-size:var(--text-xs);color:var(--text-muted);display:flex;align-items:center;gap:var(--space-2);">
+          <span>iOS</span>
+          <span style="opacity:0.3">·</span>
+          <span>Offline-first</span>
+          <span style="opacity:0.3">·</span>
+          <span>Kein Account</span>
+          <span style="opacity:0.3">·</span>
+          <span>DSGVO-konform</span>
+        </p>
+      </div>
+
+      <!-- Right: phone mockup -->
+      <div class="hero-visual reveal" data-delay="100" style="display:flex;align-items:center;justify-content:center;">
+        <div class="phone-frame" role="img" aria-label="App-Vorschau: Dezibelmesser">
+          <div class="phone-notch" aria-hidden="true"></div>
+          <div class="phone-screen">
+
+            <!-- Status bar -->
+            <div style="display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--text-muted);padding-top:var(--space-1);">
+              <span>9:41</span>
+              <div style="display:flex;gap:4px;align-items:center;">
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="currentColor" opacity="0.6"><rect x="0" y="2" width="2" height="6" rx="1"/><rect x="3" y="1" width="2" height="7" rx="1"/><rect x="6" y="0" width="2" height="8" rx="1"/><rect x="9" y="0.5" width="2.5" height="7" rx="1" opacity="0.3"/></svg>
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="currentColor" opacity="0.6"><path d="M5 1.5C3.2 1.5 1.7 2.3.7 3.5L0 2.8C1.2 1.3 3 0.3 5 0.3s3.8 1 5 2.5L9.3 3.5C8.3 2.3 6.8 1.5 5 1.5z"/><path d="M5 3.8C3.9 3.8 3 4.3 2.3 5L1.6 4.3C2.5 3.3 3.7 2.7 5 2.7s2.5.6 3.4 1.6L7.7 5C7 4.3 6.1 3.8 5 3.8z"/><circle cx="5" cy="6.5" r="1.2"/></svg>
+              </div>
+            </div>
+
+            <!-- App header -->
+            <div style="margin-top:var(--space-3);">
+              <div style="font-size:9px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);">Dezibelmessung</div>
+              <div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">Hunde bellen · Lärmtyp erkannt</div>
+            </div>
+
+            <!-- dB big number -->
+            <div style="text-align:center;margin-top:var(--space-4);">
+              <div style="font-family:var(--font-display);font-size:3rem;line-height:1;color:var(--text-primary);letter-spacing:-0.04em;">
+                <span class="db-display">74</span><span style="font-size:1rem;color:var(--text-muted);font-family:var(--font-body);margin-left:3px;">dB</span>
+              </div>
+              <div style="font-size:9px;color:var(--accent);margin-top:4px;font-weight:500;">● NACHTRUHE VERLETZT</div>
+            </div>
+
+            <!-- Waveform -->
+            <div class="waveform" aria-hidden="true">
+              <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+
+            <!-- Stats row -->
+            <div style="display:flex;justify-content:space-between;background:var(--surface2);border-radius:var(--radius-md);padding:var(--space-3);">
+              <div style="text-align:center;">
+                <div style="font-size:14px;font-weight:600;color:var(--text-primary);">58</div>
+                <div style="font-size:8px;color:var(--text-muted);">MIN</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-size:14px;font-weight:600;color:var(--accent);">74</div>
+                <div style="font-size:8px;color:var(--text-muted);">AVG</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-size:14px;font-weight:600;color:var(--text-primary);">81</div>
+                <div style="font-size:8px;color:var(--text-muted);">MAX</div>
+              </div>
+            </div>
+
+            <!-- Button mockup -->
+            <div style="background:var(--accent);border-radius:var(--radius-md);padding:var(--space-3);text-align:center;font-size:11px;font-weight:600;color:#fff;margin-top:auto;">
+              Aufnahme stoppen
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Floating badge -->
+        <div style="position:absolute;top:-20px;right:-30px;background:var(--surface2);border:1px solid var(--border-mid);border-radius:var(--radius-lg);padding:var(--space-3) var(--space-4);font-size:var(--text-xs);color:var(--text-secondary);">
+          <div style="font-weight:600;color:var(--text-primary);font-size:var(--text-sm);">22:14 Uhr</div>
+          <div style="color:var(--accent);font-weight:500;">Nachtruhe aktiv</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     THE PROBLEM
+══════════════════════════════════════════════════════════════ -->
+<section class="section" style="border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center;">
+      <div class="reveal">
+        <p class="section-label" data-i18n="problem.label">Das Problem</p>
+        <h2 class="section-title" data-i18n="problem.title">Lärm ist schwer zu beweisen</h2>
+        <p style="font-size:var(--text-base);color:var(--text-secondary);line-height:1.75;" data-i18n="problem.body">
+          Ob bellende Hunde, feiernde Nachbarn oder Baustellen: Ohne dokumentierte Beweise verpufft jede Beschwerde.
+        </p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+        <!-- Stat cards -->
+        <div class="card reveal" data-delay="0" style="display:flex;align-items:center;gap:var(--space-5);">
+          <div style="font-family:var(--font-display);font-size:var(--text-2xl);color:var(--accent);min-width:100px;" data-i18n="problem.stat1">22:00–06:00</div>
+          <div>
+            <div style="font-size:var(--text-sm);font-weight:500;color:var(--text-primary);" data-i18n="problem.stat1_label">Nachtruhe</div>
+            <div style="font-size:var(--text-xs);color:var(--text-muted);">§ 1 LImSchG</div>
+          </div>
+        </div>
+        <div class="card reveal" data-delay="60" style="display:flex;align-items:center;gap:var(--space-5);">
+          <div style="font-family:var(--font-display);font-size:var(--text-2xl);color:var(--accent);min-width:100px;" data-i18n="problem.stat2">13:00–15:00</div>
+          <div>
+            <div style="font-size:var(--text-sm);font-weight:500;color:var(--text-primary);" data-i18n="problem.stat2_label">Mittagsruhe</div>
+            <div style="font-size:var(--text-xs);color:var(--text-muted);">Landesrecht variiert</div>
+          </div>
+        </div>
+        <div class="card reveal" data-delay="120" style="display:flex;align-items:center;gap:var(--space-5);">
+          <div style="font-family:var(--font-display);font-size:var(--text-2xl);color:var(--accent);min-width:100px;" data-i18n="problem.stat3">§117 OWiG</div>
+          <div>
+            <div style="font-size:var(--text-sm);font-weight:500;color:var(--text-primary);" data-i18n="problem.stat3_label">Rechtsgrundlage</div>
+            <div style="font-size:var(--text-xs);color:var(--text-muted);">Bis zu 5.000 € Bußgeld</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     FEATURES
+══════════════════════════════════════════════════════════════ -->
+<section class="section" id="features" style="border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="margin-bottom:var(--space-16);">
+      <p class="section-label reveal" data-i18n="features.label">Funktionen</p>
+      <h2 class="section-title reveal" data-delay="60" data-i18n="features.title">Alles für eine lückenlose Dokumentation</h2>
+      <p class="section-subtitle reveal" data-delay="120" data-i18n="features.subtitle">Von der ersten Messung bis zum fertig ausgefüllten Behördenschreiben.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <!-- F1: dB meter -->
+      <div class="feature-card reveal" data-delay="0">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12h2M20 12h2M12 2v2M12 20v2"/><circle cx="12" cy="12" r="4"/><path d="M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M17.66 6.34l-1.41 1.41M6.34 17.66l-1.41 1.41"/>
+          </svg>
+        </div>
+        <h3 class="feature-title" data-i18n="features.f1_title">Echtzeit-Dezibelmessung</h3>
+        <p class="feature-desc" data-i18n="features.f1_desc">Kalibrierte SPL-Näherung mit 28-Balken-Wellenform.</p>
+      </div>
+
+      <!-- F2: Ruhezeiten -->
+      <div class="feature-card reveal" data-delay="60">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <h3 class="feature-title" data-i18n="features.f2_title">Automatische Ruhezeiterkennung</h3>
+        <p class="feature-desc" data-i18n="features.f2_desc">Nacht-, Mittags- und Sonntagsruhe werden sofort erkannt.</p>
+      </div>
+
+      <!-- F3: Audio -->
+      <div class="feature-card reveal" data-delay="120">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="23"/><line x1="8" x2="16" y1="23" y2="23"/>
+          </svg>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--space-2);">
+          <h3 class="feature-title" style="margin-bottom:0;" data-i18n="features.f3_title">Audio-Beweise</h3>
+          <span style="font-size:10px;font-weight:600;background:var(--accent);color:#fff;padding:2px 8px;border-radius:var(--radius-full);">PRO</span>
+        </div>
+        <p class="feature-desc" data-i18n="features.f3_desc">Bis zu 30 Sekunden Aufnahme, lokal gespeichert.</p>
+      </div>
+
+      <!-- F4: PDF templates -->
+      <div class="feature-card reveal" data-delay="0">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/>
+          </svg>
+        </div>
+        <h3 class="feature-title" data-i18n="features.f4_title">4 Behördenvorlagen</h3>
+        <p class="feature-desc" data-i18n="features.f4_desc">Ordnungsamt, Hausverwaltung, Rechtsanwalt, Amtsgericht.</p>
+      </div>
+
+      <!-- F5: Widget -->
+      <div class="feature-card reveal" data-delay="60">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+          </svg>
+        </div>
+        <h3 class="feature-title" data-i18n="features.f5_title">iOS-Widget</h3>
+        <p class="feature-desc" data-i18n="features.f5_desc">Ein Tipp auf den Homescreen startet sofort die Protokollierung.</p>
+      </div>
+
+      <!-- F6: Offline -->
+      <div class="feature-card reveal" data-delay="120">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <h3 class="feature-title" data-i18n="features.f6_title">Offline & privat</h3>
+        <p class="feature-desc" data-i18n="features.f6_desc">Alle Daten bleiben auf deinem Gerät. Kein Account, keine Cloud.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════════════════════════════ -->
+<section class="section" id="how-it-works" style="border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="text-align:center;max-width:540px;margin-inline:auto;margin-bottom:var(--space-16);">
+      <p class="section-label reveal" data-i18n="steps.label">So funktioniert's</p>
+      <h2 class="section-title reveal" data-delay="60" data-i18n="steps.title">In drei Schritten zur Dokumentation</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal" data-delay="0">
+        <div class="step-num accent">1</div>
+        <div>
+          <div class="step-title" data-i18n="steps.s1_title">Ereignis erfassen</div>
+          <p class="step-desc" data-i18n="steps.s1_desc">Lärmtyp auswählen, Dezibelmeter starten, Notiz und Zeuge hinzufügen.</p>
+        </div>
+      </div>
+      <div class="step reveal" data-delay="80">
+        <div class="step-num">2</div>
+        <div>
+          <div class="step-title" data-i18n="steps.s2_title">Automatisch prüfen</div>
+          <p class="step-desc" data-i18n="steps.s2_desc">Die App erkennt Ruhezeitverstöße und markiert das Ereignis.</p>
+        </div>
+      </div>
+      <div class="step reveal" data-delay="160">
+        <div class="step-num">3</div>
+        <div>
+          <div class="step-title" data-i18n="steps.s3_title">PDF exportieren</div>
+          <p class="step-desc" data-i18n="steps.s3_desc">Professionelles Behördenschreiben mit einem Tipp generieren und versenden.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     PRICING TEASER
+══════════════════════════════════════════════════════════════ -->
+<section class="section" style="border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:var(--space-12);">
+      <p class="section-label reveal" data-i18n="pricing_teaser.label">Preise</p>
+      <h2 class="section-title reveal" data-delay="60" data-i18n="pricing_teaser.title">Kostenlos starten, Pro wenn du's brauchst</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);max-width:640px;margin-inline:auto;">
+
+      <!-- Free -->
+      <div class="card reveal" data-delay="0" style="text-align:center;">
+        <div class="pricing-tier" data-i18n="pricing_teaser.free_title">Kostenlos</div>
+        <div style="font-family:var(--font-display);font-size:var(--text-3xl);margin-bottom:var(--space-3);">€0</div>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary);" data-i18n="pricing_teaser.free_desc">Bis zu 10 Ereignisse, Dezibelmeter, Ruhezeiterkennung, PDF-Export.</p>
+      </div>
+
+      <!-- Pro -->
+      <div class="card reveal" data-delay="80" style="text-align:center;border-color:rgba(229,57,53,0.35);background:linear-gradient(135deg,var(--surface2) 0%,rgba(229,57,53,0.05) 100%);">
+        <div class="pricing-tier" data-i18n="pricing_teaser.pro_title">Pro</div>
+        <div style="font-family:var(--font-display);font-size:var(--text-3xl);color:var(--accent);margin-bottom:var(--space-1);" data-i18n="pricing_teaser.pro_price">19,99 €</div>
+        <div style="font-size:var(--text-xs);color:var(--text-muted);margin-bottom:var(--space-3);" data-i18n="pricing_teaser.pro_cadence">Einmalig. Für immer.</div>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary);" data-i18n="pricing_teaser.pro_desc">Unbegrenzte Ereignisse, Audio, ZIP-Export.</p>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-8);">
+      <a href="pricing.html" class="btn btn-ghost" data-i18n="pricing_teaser.see_all">Alle Preise ansehen →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     CTA BAND
+══════════════════════════════════════════════════════════════ -->
+<section style="border-top:1px solid var(--border);padding-block:var(--space-24);position:relative;overflow:hidden;">
+  <div class="glow-red" aria-hidden="true" style="bottom:-100px;left:50%;transform:translateX(-50%);"></div>
+  <div class="container" style="text-align:center;position:relative;z-index:1;">
+    <h2 class="display reveal" style="font-size:clamp(var(--text-3xl),5vw,var(--text-5xl));letter-spacing:-0.03em;margin-bottom:var(--space-4);" data-i18n="cta.title">Dein Protokoll. Dein Recht.</h2>
+    <p class="reveal" data-delay="80" style="font-size:var(--text-lg);color:var(--text-secondary);margin-bottom:var(--space-8);" data-i18n="cta.subtitle">Hör auf, Lärm zu ertragen. Fang an, ihn zu dokumentieren.</p>
+    <!-- TODO: Replace href="#" with real App Store URL -->
+    <a href="#" class="appstore-badge reveal" data-delay="160" style="display:inline-flex;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+      <span data-i18n="cta.btn">Jetzt im App Store</span>
+    </a>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-dot" aria-hidden="true"></span>
+          Ruhestörer
+        </a>
+        <p data-i18n="footer.tagline">Rechtssichere Lärmdokumentation für Deutschland.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title" data-i18n="footer.pages">Seiten</p>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.features">Funktionen</a></li>
+          <li><a href="pricing.html" data-i18n="nav.pricing">Preise</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title" data-i18n="footer.legal">Rechtliches</p>
+        <ul>
+          <li><a href="privacy.html">Datenschutz</a></li>
+          <li><a href="imprint.html">Impressum</a></li>
+          <li><a href="terms.html">AGB</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2025 Ruhestörer. Alle Rechte vorbehalten.</p>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
