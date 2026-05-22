@@ -63,11 +63,11 @@
 <!-- ── Page header ─────────────────────────────────────────── -->
 <div class="page-header" style="text-align:center;">
   <div class="container">
-    <p class="section-label reveal">Preise · Pricing</p>
-    <h1 class="display reveal" data-delay="60" style="font-size:clamp(var(--text-3xl),5vw,var(--text-5xl));letter-spacing:-0.03em;margin-bottom:var(--space-4);">
+    <p class="section-label reveal" data-i18n="pricing.label">Preise</p>
+    <h1 class="display reveal" data-delay="60" style="font-size:clamp(var(--text-3xl),5vw,var(--text-5xl));letter-spacing:-0.03em;margin-bottom:var(--space-4);" data-i18n="pricing.headline">
       Einfach. Einmalig. Fair.
     </h1>
-    <p class="reveal" data-delay="120" style="font-size:var(--text-lg);color:var(--text-secondary);max-width:480px;margin-inline:auto;">
+    <p class="reveal" data-delay="120" style="font-size:var(--text-lg);color:var(--text-secondary);max-width:480px;margin-inline:auto;" data-i18n="pricing.subhead">
       Kein Abo. Keine versteckten Kosten. Einmal zahlen, für immer nutzen.
     </p>
   </div>
@@ -77,8 +77,8 @@
 <section style="padding-top:var(--space-12);padding-bottom:var(--space-8);">
   <div class="container">
     <div class="one-time-banner reveal">
-      <p style="font-size:var(--text-sm);font-weight:600;color:var(--accent);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:var(--space-2);">Kein Abo. Nie.</p>
-      <p style="font-size:var(--text-base);color:var(--text-secondary);">
+      <p style="font-size:var(--text-sm);font-weight:600;color:var(--accent);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:var(--space-2);" data-i18n="pricing.banner_label">Kein Abo. Nie.</p>
+      <p style="font-size:var(--text-base);color:var(--text-secondary);" data-i18n="pricing.banner_body">
         Ruhestörer Pro ist eine <strong>einmalige Zahlung</strong> — kein monatliches Abo, kein jährliches Abo. Du zahlst einmal und nutzt die App dauerhaft auf all deinen iOS-Geräten.
       </p>
     </div>
@@ -92,97 +92,97 @@
 
       <!-- FREE -->
       <div class="pricing-card reveal" data-delay="0">
-        <p class="pricing-tier">Kostenlos · Free</p>
+        <p class="pricing-tier" data-i18n="pricing.free_tier">Kostenlos</p>
         <div class="pricing-price">€0</div>
-        <p class="pricing-cadence">Für immer gratis · Free forever</p>
+        <p class="pricing-cadence" data-i18n="pricing.free_cadence">Für immer gratis</p>
 
         <ul class="pricing-features">
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>Bis zu 10 Ereignisse · Up to 10 events</span>
+            <span data-i18n="pricing.free_feat1">Bis zu 10 Ereignisse</span>
           </li>
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>Echtzeit-Dezibelmessung · Real-time dB meter</span>
+            <span data-i18n="pricing.free_feat2">Echtzeit-Dezibelmessung</span>
           </li>
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>Automatische Ruhezeiterkennung · Ruhezeiten detection</span>
-          </li>
-          <li class="pricing-feature included">
-            <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>PDF-Export (alle 4 Vorlagen) · PDF export (all 4 templates)</span>
-          </li>
-          <li class="pricing-feature included">
-            <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>iOS-Widget · Home screen widget</span>
-          </li>
-          <li class="pricing-feature included">
-            <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>DE + EN · Bilingual</span>
+            <span data-i18n="pricing.free_feat3">Automatische Ruhezeiterkennung</span>
           </li>
           <li class="pricing-feature excluded">
             <svg class="pricing-feature-check cross-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="4" x2="14" y2="14"/><line x1="14" y1="4" x2="4" y2="14"/></svg>
-            <span>Audio-Aufnahme · Audio recording</span>
+            <span data-i18n="pricing.free_feat4">PDF-Export (alle 4 Vorlagen)</span>
+          </li>
+          <li class="pricing-feature included">
+            <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
+            <span data-i18n="pricing.free_feat5">iOS-Widget</span>
+          </li>
+          <li class="pricing-feature included">
+            <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
+            <span data-i18n="pricing.free_feat6">Zweisprachig (DE + EN)</span>
           </li>
           <li class="pricing-feature excluded">
             <svg class="pricing-feature-check cross-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="4" x2="14" y2="14"/><line x1="14" y1="4" x2="4" y2="14"/></svg>
-            <span>Unbegrenzte Ereignisse · Unlimited events</span>
+            <span data-i18n="pricing.free_miss1">Audio-Aufnahme</span>
+          </li>
+          <li class="pricing-feature excluded">
+            <svg class="pricing-feature-check cross-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="4" x2="14" y2="14"/><line x1="14" y1="4" x2="4" y2="14"/></svg>
+            <span data-i18n="pricing.free_miss2">Unbegrenzte Ereignisse</span>
           </li>
         </ul>
 
         <!-- TODO: Replace href="#" with real App Store URL -->
-        <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;">
-          Kostenlos laden · Download free
+        <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;" data-i18n="pricing.free_btn">
+          Kostenlos laden
         </a>
       </div>
 
       <!-- PRO -->
       <div class="pricing-card featured reveal" data-delay="80">
-        <div class="pricing-badge">Einmalig · One-time</div>
+        <div class="pricing-badge" data-i18n="pricing.pro_badge">Einmalig</div>
         <p class="pricing-tier">Pro</p>
         <div class="pricing-price"><sup>€</sup>19<span style="font-size:var(--text-2xl)">,99</span></div>
-        <p class="pricing-cadence" style="color:var(--accent);font-weight:500;">Einmalig. Für immer. · Once. Forever.</p>
+        <p class="pricing-cadence" style="color:var(--accent);font-weight:500;" data-i18n="pricing.pro_cadence">Einmalig. Für immer.</p>
 
         <ul class="pricing-features">
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span><strong>Unbegrenzte Ereignisse · Unlimited events</strong></span>
+            <span><strong data-i18n="pricing.pro_feat1">Unbegrenzte Ereignisse</strong></span>
           </li>
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span><strong>Audio-Beweis (30s) · Audio evidence (30s)</strong></span>
+            <span><strong data-i18n="pricing.pro_feat2">Audio-Beweis (30s)</strong></span>
           </li>
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span><strong>ZIP-Export mit Audiodateien · ZIP export with audio</strong></span>
+            <span><strong data-i18n="pricing.pro_feat3">ZIP-Export mit Audiodateien</strong></span>
           </li>
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>Echtzeit-Dezibelmessung · Real-time dB meter</span>
+            <span data-i18n="pricing.pro_feat4">Echtzeit-Dezibelmessung</span>
           </li>
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>Automatische Ruhezeiterkennung · Ruhezeiten detection</span>
+            <span data-i18n="pricing.pro_feat5">Automatische Ruhezeiterkennung</span>
           </li>
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>PDF-Export (alle 4 Vorlagen) · PDF export (all 4 templates)</span>
+            <span data-i18n="pricing.pro_feat6">PDF-Export (alle 4 Vorlagen)</span>
           </li>
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>iOS-Widget + alle zukünftigen Pro-Funktionen</span>
+            <span data-i18n="pricing.pro_feat7">iOS-Widget + alle zukünftigen Pro-Funktionen</span>
           </li>
           <li class="pricing-feature included">
             <svg class="pricing-feature-check check-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 9 7 13 15 5"/></svg>
-            <span>Kauf auf neuem Gerät wiederherstellbar · Restore on new device</span>
+            <span data-i18n="pricing.pro_feat8">Kauf auf neuem Gerät wiederherstellbar</span>
           </li>
         </ul>
 
         <!-- TODO: Replace href="#" with real App Store URL -->
         <a href="#" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
-          Im App Store kaufen
+          <span data-i18n="pricing.pro_btn">Im App Store kaufen</span>
         </a>
       </div>
 
@@ -193,60 +193,60 @@
 <!-- ── FAQ ─────────────────────────────────────────────────── -->
 <section class="section" style="border-top:1px solid var(--border);">
   <div class="container" style="max-width:720px;margin-inline:auto;">
-    <h2 class="display reveal" style="font-size:var(--text-3xl);letter-spacing:-0.02em;margin-bottom:var(--space-10);">Häufige Fragen · FAQ</h2>
+    <h2 class="display reveal" style="font-size:var(--text-3xl);letter-spacing:-0.02em;margin-bottom:var(--space-10);" data-i18n="pricing.faq_title">Häufige Fragen</h2>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Ist das wirklich eine Einmalzahlung? · Is this really a one-time payment?</span>
+        <span data-i18n="pricing.faq1_q">Ist das wirklich eine Einmalzahlung?</span>
         <div class="faq-icon" aria-hidden="true">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg>
         </div>
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>Ja, vollständig. Ruhestörer Pro ist ein <strong>Lifetime-Kauf</strong> — du zahlst einmal und nutzt alle Pro-Funktionen dauerhaft, ohne monatliche oder jährliche Gebühren. Die Abwicklung erfolgt über Apple In-App Purchase.<br><br>Yes, completely. Ruhestörer Pro is a one-time lifetime purchase — you pay once and use all Pro features permanently, with no recurring fees. Payment is handled through Apple In-App Purchase.</p>
+          <p data-i18n="pricing.faq1_a">Ja, vollständig. Ruhestörer Pro ist ein <strong>Lifetime-Kauf</strong> — du zahlst einmal und nutzt alle Pro-Funktionen dauerhaft, ohne monatliche oder jährliche Gebühren. Die Abwicklung erfolgt über Apple In-App Purchase.</p>
         </div>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Kann ich Pro nach einem Gerätewechsel wiederherstellen? · Can I restore Pro on a new device?</span>
+        <span data-i18n="pricing.faq2_q">Kann ich Pro nach einem Gerätewechsel wiederherstellen?</span>
         <div class="faq-icon" aria-hidden="true">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg>
         </div>
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>Ja. Tippe in der App auf „Kauf wiederherstellen" — Apple verknüpft den Kauf mit deiner Apple ID, nicht mit einem Gerät. Du kannst Pro auf allen deinen iOS-Geräten mit derselben Apple ID nutzen.<br><br>Yes. Tap "Restore Purchase" in the app — Apple links the purchase to your Apple ID, not to a specific device. You can use Pro on all your iOS devices with the same Apple ID.</p>
+          <p data-i18n="pricing.faq2_a">Ja. Tippe in der App auf „Kauf wiederherstellen" — Apple verknüpft den Kauf mit deiner Apple ID, nicht mit einem Gerät. Du kannst Pro auf allen deinen iOS-Geräten mit derselben Apple ID nutzen.</p>
         </div>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Was passiert mit meinen Daten? · What happens to my data?</span>
+        <span data-i18n="pricing.faq3_q">Was passiert mit meinen Daten?</span>
         <div class="faq-icon" aria-hidden="true">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg>
         </div>
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>Alle Ereignisse, Messungen und Audioaufnahmen werden <strong>ausschließlich lokal auf deinem Gerät</strong> gespeichert. Es gibt keine Cloud-Synchronisierung und keine Server, an die Daten übermittelt werden. Die einzige externe Verbindung ist RevenueCat für die Kaufabwicklung.<br><br>All events, measurements, and audio recordings are stored <strong>exclusively on your device</strong>. There is no cloud sync and no server that receives your data. The only external connection is RevenueCat for purchase processing.</p>
+          <p data-i18n="pricing.faq3_a">Alle Ereignisse, Messungen und Audioaufnahmen werden <strong>ausschließlich lokal auf deinem Gerät</strong> gespeichert. Es gibt keine Cloud-Synchronisierung und keine Server, an die Daten übermittelt werden. Die einzige externe Verbindung ist RevenueCat für die Kaufabwicklung.</p>
         </div>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Brauche ich einen Account? · Do I need an account?</span>
+        <span data-i18n="pricing.faq4_q">Brauche ich einen Account?</span>
         <div class="faq-icon" aria-hidden="true">
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg>
         </div>
       </button>
       <div class="faq-answer">
         <div class="faq-answer-inner">
-          <p>Nein. Ruhestörer benötigt keinen Account, keine Registrierung, keine E-Mail. Die App funktioniert sofort nach dem Download — vollständig anonym und offline.<br><br>No. Ruhestörer requires no account, no registration, no email. The app works immediately after download — completely anonymous and offline.</p>
+          <p data-i18n="pricing.faq4_a">Nein. Ruhestörer benötigt keinen Account, keine Registrierung, keine E-Mail. Die App funktioniert sofort nach dem Download — vollständig anonym und offline.</p>
         </div>
       </div>
     </div>
@@ -257,11 +257,11 @@
 <!-- ── CTA ─────────────────────────────────────────────────── -->
 <section style="border-top:1px solid var(--border);padding-block:var(--space-20);text-align:center;">
   <div class="container">
-    <p class="reveal" style="font-size:var(--text-lg);color:var(--text-secondary);margin-bottom:var(--space-6);">Bereit, Lärm zu dokumentieren? · Ready to document noise?</p>
+    <p class="reveal" style="font-size:var(--text-lg);color:var(--text-secondary);margin-bottom:var(--space-6);" data-i18n="pricing.cta_body">Bereit, Lärm zu dokumentieren?</p>
     <!-- TODO: Replace href="#" with real App Store URL -->
     <a href="#" class="appstore-badge reveal" data-delay="80" style="display:inline-flex;">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
-      Im App Store laden · Download on App Store
+      <span data-i18n="pricing.cta_btn">Im App Store laden</span>
     </a>
   </div>
 </section>
@@ -272,27 +272,27 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="nav-logo"><span class="nav-logo-dot" aria-hidden="true"></span>Ruhestörer</a>
-        <p>Rechtssichere Lärmdokumentation für Deutschland.</p>
+        <p data-i18n="footer.tagline">Rechtssichere Lärmdokumentation für Deutschland.</p>
       </div>
       <div class="footer-col">
-        <p class="footer-col-title">Seiten</p>
+        <p class="footer-col-title" data-i18n="footer.pages">Seiten</p>
         <ul>
-          <li><a href="index.html">Start</a></li>
-          <li><a href="pricing.html">Preise</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Start</a></li>
+          <li><a href="pricing.html" data-i18n="nav.pricing">Preise</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <p class="footer-col-title">Rechtliches</p>
+        <p class="footer-col-title" data-i18n="footer.legal">Rechtliches</p>
         <ul>
-          <li><a href="privacy.html">Datenschutz</a></li>
-          <li><a href="imprint.html">Impressum</a></li>
-          <li><a href="terms.html">AGB</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a></li>
+          <li><a href="imprint.html" data-i18n="footer.imprint">Impressum</a></li>
+          <li><a href="terms.html" data-i18n="footer.terms">AGB</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Ruhestörer. Alle Rechte vorbehalten.</p>
+      <p data-i18n="footer.copyright">© 2025 Ruhestörer. Alle Rechte vorbehalten.</p>
       <div class="lang-toggle">
         <button class="lang-btn active" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
