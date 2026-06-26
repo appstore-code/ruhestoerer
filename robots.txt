@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://appstore-code.github.io/ruhestoerer/sitemap.xml
