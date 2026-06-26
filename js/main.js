@@ -4,12 +4,13 @@
    waveform animation, stagger
    ============================================================ */
 
-document.addEventListener('DOMContentLoaded', () => {
+function initMain() {
 
   /* ── Nav scroll ─────────────────────────────────────────── */
   const nav = document.querySelector('.nav');
   if (nav) {
     const onScroll = () => {
+      if (window.NAV_ALWAYS_SCROLLED) { nav.classList.add('scrolled'); return; }
       nav.classList.toggle('scrolled', window.scrollY > 20);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -102,4 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1800);
   }
 
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMain);
+} else {
+  initMain();
+}

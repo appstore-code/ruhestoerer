@@ -11,6 +11,7 @@ const translations = {
       pricing: "Preise",
       faq: "FAQ",
       contact: "Kontakt",
+      blog: "Ratgeber",
     },
     hero: {
       badge: "Für deutsches Recht",
@@ -146,6 +147,7 @@ const translations = {
       pricing: "Pricing",
       faq: "FAQ",
       contact: "Contact",
+      blog: "Blog",
     },
     hero: {
       badge: "Built for German law",
@@ -314,6 +316,11 @@ function applyTranslations(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
+
+  // Toggle bilingual content sections
+  document.querySelectorAll('.lang-content').forEach(el => {
+    el.classList.toggle('active', el.getAttribute('lang') === lang);
+  });
 }
 
 function setLang(lang) {
@@ -321,12 +328,16 @@ function setLang(lang) {
   applyTranslations(lang);
 }
 
-// Init on DOM ready
-document.addEventListener('DOMContentLoaded', () => {
+function initI18n() {
   const lang = detectLang();
   applyTranslations(lang);
-
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => setLang(btn.dataset.lang));
   });
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initI18n);
+} else {
+  initI18n();
+}

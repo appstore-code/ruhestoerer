@@ -15,29 +15,7 @@
 </head>
 <body>
 
-<nav class="nav scrolled">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><span class="nav-logo-dot" aria-hidden="true"></span>Ruhestörer</a>
-    <ul class="nav-links">
-      <li><a href="index.html#features">Funktionen</a></li>
-      <li><a href="pricing.html">Preise</a></li>
-      <li><a href="contact.html">Kontakt</a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="de">DE</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-
-<div class="mobile-menu">
-  <a href="index.html">Start</a>
-  <a href="pricing.html">Preise</a>
-  <a href="contact.html">Kontakt</a>
-</div>
+<div id="site-nav"></div>
 
 <main style="padding-top:calc(var(--nav-h) + var(--space-16));padding-bottom:var(--space-32);">
   <div class="container">
@@ -50,11 +28,7 @@
 
       <h2>1. Geltungsbereich</h2>
       <p>Diese Nutzungsbedingungen gelten für die Nutzung der iOS-App <strong>Ruhestörer</strong> (nachfolgend „App"), die über den Apple App Store erhältlich ist. Betreiber der App ist:</p>
-      <div class="placeholder-block">
-        [PLACEHOLDER — Vollständiger Name des Betreibers]<br>
-        [PLACEHOLDER — Adresse]<br>
-        E-Mail: ruhestorerlarmprotokoll@outlook.com
-      </div>
+      <p>Kleidi Amedani<br>E-Mail: ruhestorerlarmprotokoll@outlook.com</p>
 
       <h2>2. Nutzungslizenz</h2>
       <p>Mit dem Download und der Installation der App erhältst du eine nicht-exklusive, nicht übertragbare Lizenz zur Nutzung der App auf iOS-Geräten, die du besitzt oder kontrollierst, im Rahmen der Apple-Nutzungsbedingungen. Du darfst die App nicht vervielfältigen, modifizieren, dekompilieren oder für kommerzielle Zwecke weitervertreiben.</p>
@@ -93,11 +67,7 @@
 
       <h2>1. Scope</h2>
       <p>These Terms of Service govern the use of the iOS app <strong>Ruhestörer</strong> ("App"), available on the Apple App Store. The app is operated by:</p>
-      <div class="placeholder-block">
-        [PLACEHOLDER — Full legal name of operator]<br>
-        [PLACEHOLDER — Address]<br>
-        Email: ruhestorerlarmprotokoll@outlook.com
-      </div>
+      <p>Kleidi Amedani<br>Email: ruhestorerlarmprotokoll@outlook.com</p>
 
       <h2>2. License</h2>
       <p>Downloading and installing the App grants you a non-exclusive, non-transferable license to use the App on iOS devices you own or control, subject to Apple's terms of service. You may not copy, modify, decompile, or redistribute the App for commercial purposes.</p>
@@ -132,41 +102,9 @@
   </div>
 </main>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo"><span class="nav-logo-dot" aria-hidden="true"></span>Ruhestörer</a>
-        <p>Rechtssichere Lärmdokumentation für Deutschland.</p>
-      </div>
-      <div class="footer-col">
-        <p class="footer-col-title">Seiten</p>
-        <ul>
-          <li><a href="index.html">Start</a></li>
-          <li><a href="pricing.html">Preise</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <p class="footer-col-title">Rechtliches</p>
-        <ul>
-          <li><a href="privacy.html">Datenschutz</a></li>
-          <li><a href="imprint.html">Impressum</a></li>
-          <li><a href="terms.html">AGB</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Ruhestörer. Alle Rechte vorbehalten.</p>
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="de">DE</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-    </div>
-  </div>
-</footer>
+<div id="site-footer"></div>
 
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
+<script>window.SITE_ROOT = ''; window.NAV_ALWAYS_SCROLLED = true;</script>
+<script src="js/partials.js"></script>
 </body>
 </html>

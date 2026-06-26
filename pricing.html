@@ -32,37 +32,7 @@
 </head>
 <body>
 
-<!-- ── Navigation ─────────────────────────────────────────── -->
-<nav class="nav scrolled" role="navigation">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <span class="nav-logo-dot" aria-hidden="true"></span>
-      Ruhestörer
-    </a>
-    <ul class="nav-links" role="list">
-      <li><a href="index.html#features" data-i18n="nav.features">Funktionen</a></li>
-      <li><a href="pricing.html" style="color:var(--text-primary);" data-i18n="nav.pricing">Preise</a></li>
-      <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="lang-toggle" role="group" aria-label="Language">
-        <button class="lang-btn active" data-lang="de">DE</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-      <!-- TODO: Replace href="https://apps.apple.com/app/id6763788979" with real App Store URL -->
-      <a href="https://apps.apple.com/app/id6763788979" class="btn btn-primary" style="font-size:0.8125rem;padding:8px 16px;">App Store</a>
-      <button class="nav-hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<div class="mobile-menu">
-  <a href="index.html#features" data-i18n="nav.features">Funktionen</a>
-  <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
-  <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
-</div>
+<div id="site-nav"></div>
 
 <!-- ── Page header ─────────────────────────────────────────── -->
 <div class="page-header" style="text-align:center;">
@@ -270,42 +240,9 @@
   </div>
 </section>
 
-<!-- ── Footer ─────────────────────────────────────────────── -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo"><span class="nav-logo-dot" aria-hidden="true"></span>Ruhestörer</a>
-        <p data-i18n="footer.tagline">Rechtssichere Lärmdokumentation für Deutschland.</p>
-      </div>
-      <div class="footer-col">
-        <p class="footer-col-title" data-i18n="footer.pages">Seiten</p>
-        <ul>
-          <li><a href="index.html" data-i18n="nav.home">Start</a></li>
-          <li><a href="pricing.html" data-i18n="nav.pricing">Preise</a></li>
-          <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <p class="footer-col-title" data-i18n="footer.legal">Rechtliches</p>
-        <ul>
-          <li><a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a></li>
-          <li><a href="imprint.html" data-i18n="footer.imprint">Impressum</a></li>
-          <li><a href="terms.html" data-i18n="footer.terms">AGB</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p data-i18n="footer.copyright">© 2025 Ruhestörer. Alle Rechte vorbehalten.</p>
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="de">DE</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-    </div>
-  </div>
-</footer>
+<div id="site-footer"></div>
 
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
+<script>window.SITE_ROOT = ''; window.NAV_ALWAYS_SCROLLED = true;</script>
+<script src="js/partials.js"></script>
 </body>
 </html>
