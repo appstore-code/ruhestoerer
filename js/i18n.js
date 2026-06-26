@@ -136,7 +136,7 @@ const translations = {
       privacy: "Datenschutz",
       imprint: "Impressum",
       terms: "AGB",
-      copyright: "© 2025 Ruhestörer. Alle Rechte vorbehalten.",
+      copyright: "© 2026 Ruhestörer. Alle Rechte vorbehalten.",
     },
   },
 
@@ -272,7 +272,7 @@ const translations = {
       privacy: "Privacy Policy",
       imprint: "Imprint",
       terms: "Terms",
-      copyright: "© 2025 Ruhestörer. All rights reserved.",
+      copyright: "© 2026 Ruhestörer. All rights reserved.",
     },
   },
 };

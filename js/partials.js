@@ -65,7 +65,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p data-i18n="footer.copyright">© 2025 Ruhestörer. Alle Rechte vorbehalten.</p>
+      <p data-i18n="footer.copyright">© 2026 Ruhestörer. Alle Rechte vorbehalten.</p>
       <div class="lang-toggle" role="group" aria-label="Language">
         <button class="lang-btn active" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
