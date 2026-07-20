@@ -11,7 +11,16 @@
       <li><a href="__ROOT__index.html#features" data-i18n="nav.features">Funktionen</a></li>
       <li><a href="__ROOT__pricing.html" data-i18n="nav.pricing">Preise</a></li>
       <li><a href="__ROOT__contact.html" data-i18n="nav.contact">Kontakt</a></li>
-      <li><a href="__ROOT__ratgeber/laermprotokoll-erstellen/index.html" data-i18n="nav.blog">Ratgeber</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+          <span data-i18n="nav.blog">Ratgeber</span>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="__ROOT__ratgeber/laermprotokoll-erstellen/index.html" role="menuitem" data-i18n="nav.blogPost1">Lärmprotokoll erstellen</a>
+          <a href="__ROOT__ratgeber/mietminderung-laerm/index.html" role="menuitem" data-i18n="nav.blogPost2">Mietminderung bei Lärm</a>
+        </div>
+      </li>
     </ul>
     <div class="nav-right">
       <div class="lang-toggle" role="group" aria-label="Language">
@@ -33,7 +42,11 @@
   <a href="__ROOT__index.html#features" data-i18n="nav.features">Funktionen</a>
   <a href="__ROOT__pricing.html" data-i18n="nav.pricing">Preise</a>
   <a href="__ROOT__contact.html" data-i18n="nav.contact">Kontakt</a>
-  <a href="__ROOT__ratgeber/laermprotokoll-erstellen/index.html" data-i18n="nav.blog">Ratgeber</a>
+  <div class="mobile-menu-group">
+    <span class="mobile-menu-label" data-i18n="nav.blog">Ratgeber</span>
+    <a href="__ROOT__ratgeber/laermprotokoll-erstellen/index.html" data-i18n="nav.blogPost1">Lärmprotokoll erstellen</a>
+    <a href="__ROOT__ratgeber/mietminderung-laerm/index.html" data-i18n="nav.blogPost2">Mietminderung bei Lärm</a>
+  </div>
 </div>`;
 
   const FOOTER_HTML = `<footer class="footer" role="contentinfo">
@@ -52,7 +65,8 @@
           <li><a href="__ROOT__index.html" data-i18n="nav.home">Start</a></li>
           <li><a href="__ROOT__pricing.html" data-i18n="nav.pricing">Preise</a></li>
           <li><a href="__ROOT__contact.html" data-i18n="nav.contact">Kontakt</a></li>
-          <li><a href="__ROOT__ratgeber/laermprotokoll-erstellen/index.html" data-i18n="nav.blog">Ratgeber</a></li>
+          <li><a href="__ROOT__ratgeber/laermprotokoll-erstellen/index.html" data-i18n="nav.blogPost1">Lärmprotokoll erstellen</a></li>
+          <li><a href="__ROOT__ratgeber/mietminderung-laerm/index.html" data-i18n="nav.blogPost2">Mietminderung bei Lärm</a></li>
         </ul>
       </div>
       <div class="footer-col">

@@ -12,6 +12,8 @@ const translations = {
       faq: "FAQ",
       contact: "Kontakt",
       blog: "Ratgeber",
+      blogPost1: "Lärmprotokoll erstellen",
+      blogPost2: "Mietminderung bei Lärm",
     },
     hero: {
       badge: "Für deutsches Recht",
@@ -148,6 +150,8 @@ const translations = {
       faq: "FAQ",
       contact: "Contact",
       blog: "Blog",
+      blogPost1: "How to Create a Noise Log",
+      blogPost2: "Rent Reduction for Noise",
     },
     hero: {
       badge: "Built for German law",

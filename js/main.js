@@ -33,6 +33,37 @@ function initMain() {
     });
   }
 
+  /* ── Nav dropdown (Ratgeber) ────────────────────────────── */
+  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+    if (!trigger) return;
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = dropdown.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', String(open));
+      document.querySelectorAll('.nav-dropdown.open').forEach(other => {
+        if (other !== dropdown) {
+          other.classList.remove('open');
+          other.querySelector('.nav-dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  });
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-dropdown.open').forEach(dropdown => {
+      dropdown.classList.remove('open');
+      dropdown.querySelector('.nav-dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+    });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.nav-dropdown.open').forEach(dropdown => {
+        dropdown.classList.remove('open');
+        dropdown.querySelector('.nav-dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
   /* ── FAQ accordion ──────────────────────────────────────── */
   document.querySelectorAll('.faq-item').forEach(item => {
     const btn = item.querySelector('.faq-question');
